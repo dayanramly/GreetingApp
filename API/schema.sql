@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS greetings (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  sender_name VARCHAR(255) NOT NULL,
+  sender_email VARCHAR(255) NOT NULL,
+  recipient_name VARCHAR(255) NOT NULL,
+  recipient_email VARCHAR(255) NOT NULL,
+  message TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

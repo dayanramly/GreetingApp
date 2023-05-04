@@ -50,6 +50,7 @@ app.post('/api/greetings', cors({ origin: 'http://localhost:5000' }), async (req
       to: `${recipient_name} <${recipient_email}>`,
       subject,
       text,
+      template:'goodboystudios'
     };
     
     await mailgunClient.messages().send(data);
